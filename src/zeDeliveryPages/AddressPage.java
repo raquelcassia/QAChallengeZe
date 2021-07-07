@@ -30,9 +30,12 @@ public class AddressPage {
 		WebDriverUtils.driver.findElement(By.id("address-details-button-continue")).click();
 	}
 	
-	public void alterarEndereco(String novoendereco) {
+	public void alterarEndereco(String novoendereco) throws InterruptedException {
+		Thread.sleep(3000);
 		opcaoReceberAgora();
+		Thread.sleep(3000);
 		opcaoAlterarMeuEndereco();
+		Thread.sleep(3000);
 		buscarNovoEndereco(novoendereco);
 		selecionarNovoEnderecoCorreto();
 		selecionarCheckboxSemComplemento();
