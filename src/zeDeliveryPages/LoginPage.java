@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 import utils.WebDriverUtils;
 
-public class PageLogin {
+public class LoginPage {
 	
 	public void botaomais18() {
 		WebDriverUtils.driver.findElement(By.id("age-gate-button-yes")).click();;
